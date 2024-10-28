@@ -1,0 +1,253 @@
+/* body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+}
+
+.dashboard {
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  background-color: #5f5cd8;
+  color: white;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.header h1 {
+  margin: 0;
+}
+
+.main-content {
+  display: flex;
+  padding: 20px;
+  gap: 20px;
+}
+
+.left-panel {
+  flex: 1;
+}
+
+.right-panel {
+  flex: 1;
+}
+
+.announcements, .class-schedule, .quick-links, .class-recordings {
+  background-color: white;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.announcements p, .class-schedule p, .quick-links div, .class-recordings p {
+  margin: 10px 0;
+}
+
+.class-item, .recording-item {
+  background-color: #ecebff;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.class-item.today {
+  background-color: #d4d2ff;
+}
+
+.quick-links .link {
+  background-color: #ecebff;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.quick-links .link:hover {
+  background-color: #d4d2ff;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.quick-links .link:hover, 
+.class-item:hover, 
+.recording-item:hover {
+  background-color: #d4d2ff;
+  transition: background-color 0.3s ease;
+}
+
+@media screen and (max-width: 768px) {
+  .main-content {
+    flex-direction: column;
+  }
+} */
+
+/* Reset some default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* General body styling */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f0f3f8;
+}
+
+/* Dashboard styling */
+.dashboard {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+/* Header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #5f5cd8;
+  color: white;
+}
+
+.header h2 {
+  margin: 0;
+}
+
+.student-info p {
+  margin-top: 8px;
+}
+
+/* Main content layout */
+.content {
+  display: flex;
+  padding: 20px;
+  gap: 20px;
+  flex: 1;
+}
+
+/* Left panel styles */
+.left-panel {
+  width: 30%;
+}
+
+/* Announcements Section */
+.announcements {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.announcement {
+  margin-top: 15px;
+}
+
+/* Class Schedule Section */
+.class-schedule {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.schedule-item {
+  background-color: #ecebff;
+  padding: 10px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.schedule-item.active {
+  background-color: #d4d2ff;
+}
+
+.status {
+  float: right;
+  color: #7f7f7f;
+}
+
+.status.today {
+  color: #ff5f5f;
+}
+
+/* Right panel styles */
+.right-panel {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Quick Links Section */
+.quick-links {
+  display: flex;
+  gap: 20px;
+}
+
+.link-item {
+  flex: 1;
+  background-color: #ecebff;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.link-item:hover {
+  background-color: #d4d2ff;
+}
+
+/* Class Recordings Section */
+.recordings {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.recordings input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+.recording-item {
+  background-color: #ecebff;
+  padding: 10px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.recording-item:hover {
+  background-color: #d4d2ff;
+}
+
+/* Media query for responsiveness */
+@media (max-width: 768px) {
+  .content {
+    flex-direction: column;
+  }
+
+  .left-panel, .right-panel {
+    width: 100%;
+  }
+}
+
